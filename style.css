@@ -1,0 +1,238 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+	background-image: url("background.jpg");
+	
+    line-height: 1.6;
+     color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rebeccapurple;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+	background-color:hotpink;
+    animation: fadeIn 2s ease-in-out; /* Animation for Header */
+	opaque:0.5;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: palevioletred;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Main Section Styling */
+main {
+    padding: 30px;
+    max-width: 1000px;
+	max-height: 2000px;
+    margin: auto;
+    background: initial;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+	position:float;
+	
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: purple;
+    display: inline-block;
+	animation: slideIn 2s ease-out;
+}
+
+p, table, form {
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: maroon;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Form Styling */
+form {
+    background-color: grey;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: black;
+    outline: none;
+}
+
+button {
+    background-color: indianred;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: mediumseagreen;
+    transition: background-color 0.3s ease;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	animation: fadeIn 2s ease-in-out;
+}
+
+/* Video Styling */
+video {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+	height:auto;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	overflow: hidden; 
+	animation: bounce 2s;
+}
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rebeccapurple;
+    color: #fff;
+    margin-top: 20px;
+    border-top: 2px solid medium;
+}
+.resume-link {
+  color: #FF5733; /* Change to your preferred color */
+  text-decoration: none; /* Optional: Removes underline */
+  font-size: 25px; /* Optional: Adjust text size */
+	font-weight:bold;
+	animation: colorChange 5s infinite;}
+
+.resume-link:hover {
+  color: #2980b9; /* Hover effect color */
+	
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+	0%   {background-color: orangered;}
+  25%  {background-color: mediumvioletred;}
+  50%  {background-color: midnightblue;}
+  100% {background-color: darkolivegreen;}
+	
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    main {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    button {
+        width: 100%;
+    }
+
+}
+@keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+}
+@keyframes colorChange {
+      0% { color: red; }
+      25% { color: blue; }
+      50% { color: green; }
+      75% { color: orange; }
+      100% { color: red; }
+    }
